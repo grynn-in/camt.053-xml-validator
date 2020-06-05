@@ -1,53 +1,40 @@
-# <img src="https://cloud.githubusercontent.com/assets/378023/15172388/b2b81950-1790-11e6-9a7c-ccc39912bb3a.png" width="60px" align="center" alt="Electron API Demos icon"> Electron API Demos
+camt.053-xml-validator
 
-[![Build Status](https://travis-ci.org/electron/electron-api-demos.svg?branch=master)](https://travis-ci.org/electron/electron-api-demos)
-[![JavaScript Standard Style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com)
+As ISO20022 adoption is kicking off in 2020 and will go through till 2025, we will see increased demand in understanding whether an ISO 20022 XML file is as per the schema definition (XSD file).
 
-This is a desktop app that interactively and with sample code demonstrates core features of the [Electron](http://electronjs.org) API. It's built with Electron, too, of course. This app works on Windows, macOS and Linux operating systems.
+Therefore this simple tool should allow you to upload your XML file (data) & the corresponing XSD (schema) and get a simple answer : Is the file valid or not valid?
+Updated on 6th June 2020
 
-Use this app to see what you can do with Electron and use the source code to learn how to create a basic Electron app.
+As per ISO20022.org CAMT payment formats should be live across US / EU and ASIA. Therefore CAMT.053 xml validator could be used anywhere in the world. Image of ISO
 
-![Electron API Demos Screenshots](https://cloud.githubusercontent.com/assets/378023/15016148/ae06cc80-124a-11e6-80dd-076d83e492f6.png)
 
----
+About Grynn
 
-This project adheres to the Contributor Covenant [code of conduct](CODE_OF_CONDUCT.md).
-By participating, you are expected to uphold this code. Please report unacceptable
-behavior to [coc@electronjs.org](mailto:coc@electronjs.org).
+For more information, pls. contact Grynn GmbH // Zurich // Schaffhausen sales@grynn.ch
+GRYNN GMBH - GO DIGITAL!
 
-Follow [@ElectronJS](https://twitter.com/electronjs) on Twitter for important
-announcements. Visit the [electron website](http://electronjs.org).
+Founded in 2017 by Deepak Pai in order to help F500 companies with their digital transformation journey. He has 2 decades of IT and Finance & has worked for companies such as Bank of America, Unilever and Ecolab.
 
-## Using
+He is an MBA graduate of St. Gallen University (Switzerland) and alumnus of MIT Manipal. He is a certified digital strategist from MIT/Emeritus & consults for F500 companies.
 
-You can [download the latest release](https://github.com/electron/electron-api-demos/releases) for your operating system or build it yourself (see below).
+Grynn is an advocate of using Free and Open Source Software (FOSS).
+About ERPNext
 
-## Building
+ERPNext is world's foremost 100% FREE and Open Source Software. ERPNext + Frappe framework powers companies like Zerodha (India's largest broker with 2 Million customers) and Reliance Industries and some 50000 companies across the globe.
+Gartner Rates ERPNext
 
-You'll need [Node.js](https://nodejs.org) installed on your computer in order to build this app.
+ERPNext has been rated as Top5 in usability and user-recommended business software by Gartner.
 
-```bash
-$ git clone https://github.com/electron/electron-api-demos
-$ cd electron-api-demos
-$ npm install
-$ npm start
-```
 
-If you don't wish to clone, you can [download the source code](https://github.com/electron/electron-api-demos/archive/master.zip).
+ISO 20022 integration to ERPNext for Swiss / EU companies
+Future solution
 
-For easier developing you can launch the app in fullscreen with DevTools open:
+We will have a SaaS product that you can subscribe to & get the payment entries directly from the file to ERPNext.
+Design & Usability (SaaS)
 
-```bash
-$ npm run dev
-```
-
-## Extending
-
- [Read the docs](docs.md) to learn more about how this app is built or how to [add a new demo](docs.md#add-a-section-or-demo).
-
-## Translations
-
-* Simplified Chinese translation of this app is available at [`demopark/electron-api-demos-Zh_CN`](https://github.com/demopark/electron-api-demos-Zh_CN).
-* Traditional Chinese translation of this app is available at [`CalvertYang/electron-api-demos-zh-Hant`](https://github.com/CalvertYang/electron-api-demos-zh-Hant).
-
-Note: these versions are maintained by outside contributors and may not always be in sync with this version.
+    Create a doctype as per the instruction
+    Upload the file
+    Choose the ISO standard and version
+    Choose the output you want (directly create payments or give you a file to import)
+    Draft or Submit
+    You complete the action of Submit
