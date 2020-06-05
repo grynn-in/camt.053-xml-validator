@@ -1,6 +1,23 @@
 const {BrowserWindow, Menu, app, shell, dialog} = require('electron')
 
-let template = [{
+let template = [
+{
+  label: 'File',
+  role: 'File',
+  submenu: [
+{
+    label: 'Minimize',
+    accelerator: 'CmdOrCtrl+M',
+    role: 'minimize'
+},
+{
+    label: 'Quit',
+    accelerator: 'CmdOrCtrl+W',
+    role: 'close'
+}
+]
+}
+,{
   label: 'Edit',
   submenu: [{
     label: 'Undo',
@@ -60,67 +77,25 @@ let template = [{
         focusedWindow.setFullScreen(!focusedWindow.isFullScreen())
       }
     }
-  }, {
-    label: 'Toggle Developer Tools',
-    accelerator: (() => {
-      if (process.platform === 'darwin') {
-        return 'Alt+Command+I'
-      } else {
-        return 'Ctrl+Shift+I'
-      }
-    })(),
-    click: (item, focusedWindow) => {
-      if (focusedWindow) {
-        focusedWindow.toggleDevTools()
-      }
-    }
-  }, {
-    type: 'separator'
-  }, {
-    label: 'App Menu Demo',
-    click: function (item, focusedWindow) {
-      if (focusedWindow) {
-        const options = {
-          type: 'info',
-          title: 'Application Menu Demo',
-          buttons: ['Ok'],
-          message: 'This demo is for the Menu section, showing how to create a clickable menu item in the application menu.'
-        }
-        dialog.showMessageBox(focusedWindow, options, function () {})
-      }
-    }
-  }]
-}, {
-  label: 'Window',
-  role: 'window',
-  submenu: [{
-    label: 'Minimize',
-    accelerator: 'CmdOrCtrl+M',
-    role: 'minimize'
-  }, {
-    label: 'Close',
-    accelerator: 'CmdOrCtrl+W',
-    role: 'close'
-  }, {
-    type: 'separator'
-  }, {
-    label: 'Reopen Window',
-    accelerator: 'CmdOrCtrl+Shift+T',
-    enabled: false,
-    key: 'reopenMenuItem',
-    click: () => {
-      app.emit('activate')
-    }
-  }]
+  }
+]
 }, {
   label: 'Help',
   role: 'help',
-  submenu: [{
-    label: 'Learn More',
+  submenu: [
+{
+    label: 'Contact Us',
     click: () => {
-      shell.openExternal('http://electron.atom.io')
+      shell.openExternal('mailto:sales@grynn.in')
     }
-  }]
+  },
+{
+    label: 'Visit Us',
+    click: () => {
+      shell.openExternal('https://www.grynn.ch/')
+    }
+  }
+]
 }]
 
 function addUpdateMenuItems (items, position) {
