@@ -10,7 +10,7 @@ As per ISO20022.org CAMT payment formats should be live across US / EU and ASIA.
 
 ![alt text](https://raw.githubusercontent.com/grynn-in/erpnext-swiss-iso20022-camt.053-csv/master/iso20022-live.png)
 
-### About Grynn
+## About Grynn
 
 For more information, pls. contact Grynn GmbH // Zurich // Schaffhausen sales@grynn.ch
 
@@ -22,7 +22,7 @@ He is an MBA graduate of St. Gallen University (Switzerland) and alumnus of MIT 
 
 Grynn is an advocate of using Free and Open Source Software (FOSS).
 
-### About ERPNext
+## About ERPNext
 
 ERPNext is world's foremost 100% FREE and Open Source Software. ERPNext + Frappe framework powers companies like Zerodha (India's largest broker with 2 Million customers) and Reliance Industries and some 50000 companies across the globe.
 
